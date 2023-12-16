@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.* ?>
+<GridPane fx:id="GridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="10.0" prefWidth="265.3333333333333" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="126.66666666666669" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.33333333333337" minWidth="10.0" prefWidth="208.66666666666663" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="170.0" minHeight="10.0" prefHeight="141.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="144.0" minHeight="10.0" prefHeight="124.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ListView fx:id="Lista" prefHeight="200.0" prefWidth="200.0" GridPane.rowSpan="2" />
+      <Label text="Ime:" translateX="10.0" translateY="-20.0" GridPane.columnIndex="1" />
+      <TextField fx:id="Ime" translateY="-20.0" GridPane.columnIndex="2" />
+      <Label text="Prezime:" translateX="10.0" translateY="30.0" GridPane.columnIndex="1" />
+      <Label text="E-mail:" translateX="10.0" translateY="10.0" GridPane.columnIndex="1" GridPane.rowSpan="2" />
+      <Label text="Korisničko ime:" translateX="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Lozinka:" translateX="10.0" translateY="55.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="Prezime" translateY="30.0" GridPane.columnIndex="2" />
+      <TextField fx:id="Email" translateY="-60.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <TextField fx:id="KorisnickoIme" translateY="2.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <TextField fx:id="Lozinka" translateY="57.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#dodaj" text="Dodaj" textAlignment="RIGHT" translateX="-50.0" translateY="-10.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#kraj" text="Kraj" translateX="70.0" translateY="-10.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="5.0" />
+         </padding>
+      </Button>
+   </children>
+</GridPane>
